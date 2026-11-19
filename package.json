@@ -1,0 +1,87 @@
+{
+  "name": "ezz-baileys",
+  "type": "module",
+  "version": "1.3.5",
+  "description": "Ezz Baileys \u2014 WhatsApp Multi-Device API (LID, scheduled, interactivos, hardening, toolkits). By Ezz.",
+  "license": "MIT",
+  "author": "Ezz",
+  "homepage": "https://github.com/Ezz-Nagi/Ezz-Baileys",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezz-Nagi/Ezz-Baileys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ezz-Nagi/Ezz-Baileys/issues"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "WAProto/**/*",
+    "media/**/*",
+    "vendor/**/*",
+    "FEATURES.md",
+    "CHANGELOG.md",
+    "Example/**/*",
+    "lib/Ezz/**/*"
+  ],
+  "scripts": {
+    "build": "echo \"Ezz Baileys ships prebuilt lib/; run tsc only if developing from src\""
+  },
+  "keywords": [
+    "baileys",
+    "whatsapp",
+    "whatsapp-api",
+    "whatsapp-bot",
+    "ezz",
+    "multi-device",
+    "bot",
+    "automation",
+    "interactive-messages"
+  ],
+  "dependencies": {
+    "@cacheable/node-cache": "^1.4.0",
+    "@hapi/boom": "^9.1.3",
+    "async-mutex": "^0.5.0",
+    "fflate": "^0.8.0",
+    "libsignal": "file:./vendor/libsignal",
+    "lru-cache": "^11.1.0",
+    "music-metadata": "^11.7.0",
+    "p-queue": "^9.0.0",
+    "pino": "^9.6",
+    "protobufjs": "^7.2.4",
+    "whatsapp-rust-bridge": "0.5.2",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@types/ws": "^8.0.0",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "audio-decode": "^2.1.3",
+    "jimp": "^1.6.0",
+    "link-preview-js": "^3.0.0",
+    "sharp": "*"
+  },
+  "peerDependenciesMeta": {
+    "audio-decode": {
+      "optional": true
+    },
+    "jimp": {
+      "optional": true
+    },
+    "link-preview-js": {
+      "optional": true
+    },
+    "sharp": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "overrides": {
+    "protobufjs": "^7.2.4"
+  }
+}
